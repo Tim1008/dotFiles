@@ -1,0 +1,34 @@
+[user]
+	name = Tim
+	email = tim_1008@163.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	ui = true
+	pager = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias] 
+	ci = commit 
+	st = status -b
+	co = checkout 
+	br = branch 
+	la = log --pretty=\"format:%ad %h (%an): %s\" --date=short 
+	ll = log --pretty=oneline --graph --decorate --abbrev-commit --all 
+	ls = log --oneline --stat --date=short 
+	ss = status -s -b
+	pom = push origin master
+[push]
+	default = simple
