@@ -25,10 +25,14 @@
 	st = status -b
 	co = checkout 
 	br = branch 
-	la = log --pretty=\"format:%ad %h (%an): %s\" --date=short 
-	ll = log --pretty=oneline --graph --decorate --abbrev-commit --all 
-	ls = log --oneline --stat --date=short 
+	pr = pull --rebase
 	ss = status -s -b
+	dica = diff --cached
+	la = log --pretty=format:'%C(yellow)%h %C(magenta)%d %Cblue(%an): %Creset%s %C(cyan)%ad' --graph --decorate --abbrev-commit --date=short 
+	ls = log --oneline --stat --date=short 
 	pom = push origin master
+	cp = cherry-pick
 [push]
 	default = simple
+[core]
+	editor = vim
